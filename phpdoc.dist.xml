@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdocumentor configVersion="3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.phpdoc.org" xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd">
+	<paths>
+		<output>
+			doc
+		</output>
+		<cache>
+			doc/cache
+		</cache>
+	</paths>
+	<version number="3.0.0">
+		<api format="php">
+			<source dsn="./cms/wp-content">
+				<path>
+					themes/tmural
+				</path>
+				<path>
+					plugins/tmural
+				</path>
+			</source>
+			<ignore>
+				<path>
+					themes/tmural/**/vendor
+				</path>
+				<path>
+					themes/tmural/**/node_modules
+				</path>
+				<path>
+					themes/tmural/**/build
+				</path>
+				<path>
+					plugins/tmural/**/vendor
+				</path>
+				<path>
+					plugins/tmural/**/node_modules
+				</path>
+				<path>
+					plugins/tmural/**/build
+				</path>
+			</ignore>
+		</api>
+	</version>
+</phpdocumentor>
