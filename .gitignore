@@ -13,6 +13,7 @@ cms/wp-content/plugins/*
 !cms/wp-content/plugins/tmural/
 
 cms/wp-content/plugins/tmural/**/build
+cms/wp-content/plugins/tmural/**/vendor
 
 mysql/
 /vendor/

@@ -12,6 +12,7 @@ Version: 1.7.2
 Author URI: http://www.miftakhov.space
 */
 
+require 'vendor/autoload.php';
 
 /**
  * Регистрирует блока редактора "Карточка товара".
@@ -22,3 +23,8 @@ function tmural_product_card_block_init() {
 	register_block_type( __DIR__ . '/blocks/product-card' );
 }
 add_action( 'init', 'tmural_product_card_block_init' );
+
+use Tmural\Models\Product;
+
+$product = new Product();
+$product->print_test();
