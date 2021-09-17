@@ -2,5 +2,7 @@
 /**
  * Generic template
  *
- * @package olegmif/tmural
+ * @package tmural\theme
+ * @version 1.0.0
  */
+

@@ -1,0 +1,49 @@
+Search.appendIndex(
+    [
+                {
+            "fqsen": "\\block_block_init\u0028\u0029",
+            "name": "block_block_init",
+            "summary": "Registers\u0020the\u0020block\u0020using\u0020the\u0020metadata\u0020loaded\u0020from\u0020the\u0020\u0060block.json\u0060\u0020file.",
+            "url": "namespaces/default.html#function_block_block_init"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product",
+            "name": "Product",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u0020Product\u0020\u0028\u0422\u043E\u0432\u0430\u0440\u0029.",
+            "url": "classes/Tmural-Models-Product.html"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aprint_test\u0028\u0029",
+            "name": "print_test",
+            "summary": "\u0412\u044B\u0432\u043E\u0434\u0438\u0442\u0020\u0442\u0435\u0441\u0442\u043E\u0432\u0443\u044E\u0020\u0441\u0442\u0440\u043E\u043A\u0443.",
+            "url": "classes/Tmural-Models-Product.html#method_print_test"
+        },                {
+            "fqsen": "\\tmural_product_card_block_init\u0028\u0029",
+            "name": "tmural_product_card_block_init",
+            "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0431\u043B\u043E\u043A\u0430\u0020\u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\u0430\u0020\u0022\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430\u0020\u0442\u043E\u0432\u0430\u0440\u0430\u0022.",
+            "url": "namespaces/default.html#function_tmural_product_card_block_init"
+        },                {
+            "fqsen": "\\tmural_test\u0028\u0029",
+            "name": "tmural_test",
+            "summary": "Undocumented\u0020function",
+            "url": "namespaces/default.html#function_tmural_test"
+        },                {
+            "fqsen": "\\tmural_some_func\u0028\u0029",
+            "name": "tmural_some_func",
+            "summary": "Undocumented\u0020function",
+            "url": "namespaces/default.html#function_tmural_some_func"
+        },                {
+            "fqsen": "\\",
+            "name": "\\",
+            "summary": "",
+            "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\Tmural\\Models",
+            "name": "Models",
+            "summary": "",
+            "url": "namespaces/tmural-models.html"
+        },                {
+            "fqsen": "\\Tmural",
+            "name": "Tmural",
+            "summary": "",
+            "url": "namespaces/tmural.html"
+        }            ]
+);

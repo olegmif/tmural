@@ -2,7 +2,7 @@
 /**
  * Содержит код класса Product
  *
- * @package olegmif/tmural-plugin
+ * @package tmural\plugin
  */
 
 namespace Tmural\Models;

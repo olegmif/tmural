@@ -10,7 +10,7 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       gutenpride
  *
- * @package           create-block
+ * @package tmural\plugin
  */
 
 /**
@@ -18,6 +18,7 @@
  * Behind the scenes, it registers also all assets so they can be enqueued
  * through the block editor in the corresponding context.
  *
+ * @package tmural\plugin
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function block_block_init() {
@@ -25,4 +26,3 @@ function block_block_init() {
 	register_block_type( __DIR__ );
 }
 add_action( 'init', 'block_block_init' );
-cd
