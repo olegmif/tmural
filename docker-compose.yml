@@ -1,0 +1,50 @@
+version: "3.5"
+
+services:
+  nginx:
+    container_name: nginx_$PROJECT_NAME
+    image: nginx:latest
+    environment:
+      PROJECT_NAME: $PROJECT_NAME
+      DOMAIN: $DOMAIN
+    volumes:
+      - ./config/nginx.conf.template:/etc/nginx/nginx.conf.template
+      - ./cms:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - wordpress
+    command: /bin/bash -c "envsubst '$$DOMAIN $$PROJECT_NAME' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf && nginx -g 'daemon off;'"
+  mysql:
+    container_name: mysql_$PROJECT_NAME
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: $PROJECT_NAME
+      MYSQL_USER: $PROJECT_NAME
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - 127.0.0.1:3306:3306
+    expose:
+      - 3306
+  wordpress:
+    container_name: wordpress_$PROJECT_NAME
+    image: $WP_IMAGE
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: "mysql:3306"
+      WORDPRESS_DB_USER: $PROJECT_NAME
+      WORDPRESS_DB_PASSWORD: $MYSQL_PASSWORD
+      WORDPRESS_DB_NAME: $PROJECT_NAME
+      WORDPRESS_TABLE_PREFIX: "wp_"
+      WORDPRESS_DEBUG: 0
+      XDEBUG_CONFIG: client_host=$HOST_IP
+    volumes:
+      - ./cms:/var/www/html
+      - ./config/php.conf:/usr/local/etc/php/conf.d/uploads.ini
+    ports:
+      - 9000
+    depends_on:
+      - mysql

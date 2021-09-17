@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "tmural/product-card",
+	"version": "1.0.0",
+	"title": "Product card",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Product card.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "tmural",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

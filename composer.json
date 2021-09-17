@@ -1,0 +1,21 @@
+{
+  "name": "olegmif/tmural",
+  "description": "WordPress project (theme & plugin)",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Olegmif\\Tmural\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "olegmif",
+      "email": "olegmif@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6",
+    "wp-coding-standards/wpcs": "^2.3"
+  }
+}

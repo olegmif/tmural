@@ -1,0 +1,4 @@
+{
+  "phpcs.executablePath": "/home/oleg/projects/tmural/vendor/bin/phpcs",
+  "phpcs.standard": "vendor/wp-coding-standards/wpcs/WordPress"
+}
