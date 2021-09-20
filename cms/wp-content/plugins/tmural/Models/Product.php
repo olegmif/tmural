@@ -13,11 +13,31 @@ namespace Tmural\Models;
  */
 class Product {
 	/**
-	 * Выводит тестовую строку.
+	 * Наименование товара
 	 *
+	 * @var string
+	 */
+	private string $name;
+
+	/**
+	 * Устанавливает наименование товара.
+	 *
+	 * @param string $name Строка с наименованием товара.
 	 * @return void
 	 */
-	public function print_test() {
-		echo 'test product';
+	public function set_name( string $name ) {
+		$this->name = $name;
 	}
+
+	/**
+	 * Возвращает наименование товара.
+	 *
+	 * @return string Строка с наименованием товара.
+	 */
+	public function get_name(): string {
+		return $this->name;
+	}
+
 }
+
+

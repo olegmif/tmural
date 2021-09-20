@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Olegmif\\Tmural\\": "src/"
+      "Tmural\\Models\\": "cms/wp-content/plugins/tmural/Models/"
     }
   },
   "authors": [
@@ -16,6 +16,7 @@
   ],
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6",
-    "wp-coding-standards/wpcs": "^2.3"
+    "wp-coding-standards/wpcs": "^2.3",
+    "phpunit/phpunit": "^9.5"
   }
 }
