@@ -24,7 +24,7 @@ class Product {
 	 *
 	 * @return void
 	 */
-	public function register_post_type(){
+	public function register_post_type() {
 		$args = array(
 			'label'  => 'Товары',
 			'public' => true,
