@@ -30,15 +30,16 @@ add_action( 'init', 'tmural_product_card_block_init' );
 
 use Tmural\Models\Product;
 
-$product = new Product();
-$product->print_test();
 
 /**
- * Undocumented function
+ * Регистрирует типы постов и таксономии.
  *
- * @package tmural\plugin
  * @return void
  */
-function tmural_test() {
-
+function tmural_register_entities() {
+	$product = new Product();
+	$product->register_post_type();
 }
+
+add_action( 'init', 'tmural_register_entities' );
+

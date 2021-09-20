@@ -20,6 +20,20 @@ class Product {
 	private string $name;
 
 	/**
+	 * Регистрирует тип поста tmural_product
+	 *
+	 * @return void
+	 */
+	public function register_post_type(){
+		$args = array(
+			'label'  => 'Товары',
+			'public' => true,
+		);
+
+		register_post_type( 'tmural_product', $args );
+	}
+
+	/**
 	 * Устанавливает наименование товара.
 	 *
 	 * @param string $name Строка с наименованием товара.
