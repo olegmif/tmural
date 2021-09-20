@@ -13,11 +13,45 @@ namespace Tmural\Models;
  */
 class Product {
 	/**
-	 * Выводит тестовую строку.
+	 * Наименование товара
+	 *
+	 * @var string
+	 */
+	private string $name;
+
+	/**
+	 * Регистрирует тип поста tmural_product
 	 *
 	 * @return void
 	 */
-	public function print_test() {
-		echo 'test product';
+	public function register_post_type() {
+		$args = array(
+			'label'  => 'Товары',
+			'public' => true,
+		);
+
+		register_post_type( 'tmural_product', $args );
 	}
+
+	/**
+	 * Устанавливает наименование товара.
+	 *
+	 * @param string $name Строка с наименованием товара.
+	 * @return void
+	 */
+	public function set_name( string $name ) {
+		$this->name = $name;
+	}
+
+	/**
+	 * Возвращает наименование товара.
+	 *
+	 * @return string Строка с наименованием товара.
+	 */
+	public function get_name(): string {
+		return $this->name;
+	}
+
 }
+
+
