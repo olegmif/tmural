@@ -30,11 +30,11 @@ class Product {
 	private string $name;
 
 	/**
-	 * Цена товара
+	 * Данные товара
 	 *
-	 * @var string
+	 * @var array
 	 */
-	private float $price;
+	private array $product_data = array();
 
 	/**
 	 * Конструктор класса.
@@ -83,6 +83,34 @@ class Product {
 	}
 
 	/**
+	 * Загружает данные товара из базы данных,
+	 * если они там есть, или устанавливает значения по умолчанию.
+	 *
+	 * @return void
+	 */
+	public function load() {
+		global $wpdb;
+		$table_name = "{$wpdb->prefix}tmural_products";
+
+		$product_data = $wpdb->get_row(
+			$wpdb->prepare(
+				"SELECT * FROM $table_name WHERE post_id = %d",
+				$this->post_id
+			),
+			ARRAY_A
+		);
+
+		if ( $product_data ) {
+			$this->product_data = $product_data;
+		} else {
+			$this->product_data = array(
+				'price' => 0,
+			);
+		}
+
+	}
+
+	/**
 	 * Устанавливает наименование товара.
 	 *
 	 * @param string $name Строка с наименованием товара.
@@ -109,11 +137,20 @@ class Product {
 	 */
 	public function set_price( float $price ) {
 		if ( is_float( $price ) ) {
-			$this->price = $price;
+			$this->product_data['price'] = $price;
 			return true;
 		} else {
 			return new WP_Error( 'invalid_value', "$price is not a valid price" );
 		}
+	}
+
+	/**
+	 * Возвращает цену товара.
+	 *
+	 * @return float Значение цены.
+	 */
+	public function get_price() {
+		return empty( $this->product_data ) ? 0 : $this->product_data['price'];
 	}
 
 	/**
@@ -124,13 +161,19 @@ class Product {
 	public function save(): void {
 		global $wpdb;
 
-		$table_name = $wpdb->prefix . 'tmural_products';
+		$table_name = "{$wpdb->prefix}tmural_products";
 
 		$update = false;
 
-		$product_data = $wpdb->get_row( "SELECT * FROM $table_name WHERE post_id = $this->post_id" );
+		$exists = $wpdb->get_row(
+			$wpdb->prepare(
+				"SELECT post_id FROM $table_name WHERE post_id = %d",
+				$this->post_id
+			),
+			ARRAY_A
+		);
 
-		if ( $product_data ) {
+		if ( $exists ) {
 			$update = true;
 		}
 
@@ -138,7 +181,7 @@ class Product {
 			$result = $wpdb->update(
 				$table_name,
 				array(
-					'price' => $this->price,
+					'price' => $this->get_price(),
 				),
 				array( 'post_id' => $this->post_id ),
 				array( '%f' ),
@@ -149,7 +192,7 @@ class Product {
 				$table_name,
 				array(
 					'post_id' => $this->post_id,
-					'price'   => $this->price,
+					'price'   => $this->get_price(),
 				),
 				array( '%f', '%d' )
 			);

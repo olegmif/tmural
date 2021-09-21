@@ -19,9 +19,10 @@ class ProductPriceMetabox {
 	/**
 	 * Добавляет метабокс.
 	 *
+	 * @param int $post_id Идентификатор поста.
 	 * @return void
 	 */
-	public static function add(): void {
+	public static function add( int $post_id ): void {
 		add_meta_box(
 			'tmural_product_price',
 			'Цена',
@@ -37,10 +38,12 @@ class ProductPriceMetabox {
 	 * @return void
 	 */
 	public static function html( \WP_Post $product ): void {
+		$product = new Product( $product->ID );
+		$product->load();
 		wp_nonce_field( 'product-edit', '_product-price' );
 		?>
 		<label for="product-price">Цена:</label>
-		<input id="product-price" type="" name="product-price" />
+		<input id="product-price" type="" name="product-price" value="<?php echo esc_attr( $product->get_price() ); ?>"/>
 		<?php
 	}
 
