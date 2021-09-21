@@ -54,6 +54,7 @@
                                 <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
                                         <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/tmural.html"><abbr title="\Tmural">Tmural</abbr></a></h4>
                 <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/tmural-metaboxes.html"><abbr title="\Tmural\Metaboxes">Metaboxes</abbr></a></li>
                                             <li><a href="namespaces/tmural-models.html"><abbr title="\Tmural\Models">Models</abbr></a></li>
                                     </ul>
                         </section>
@@ -99,11 +100,39 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_tmural_create_tables">tmural_create_tables()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Создает таблицы в базе данных.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_tmural_update_db_check">tmural_update_db_check()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Проверяет текущую версию базы данных и при необходимости устанавливает таблицы.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_tmural_register_entities">tmural_register_entities()</a>
     <span>
                         &nbsp;: void    </span>
 </dt>
 <dd>Регистрирует типы постов и таксономии.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_tmural_add_meta_boxes">tmural_add_meta_boxes()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Регистрирует метабоксы.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_tmural_save_product_post">tmural_save_product_post()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Обрабатывает сохранение поста товара</dd>
 
     </dl>
 
@@ -115,6 +144,54 @@
             <a href="packages/Default.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_tmural_create_tables">
+        tmural_create_tables()
+        <a href="namespaces/default.html#function_tmural_create_tables" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/tmural/tmural.php"><a href="files/plugins-tmural-tmural.html"><abbr title="plugins/tmural/tmural.php">tmural.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Создает таблицы в базе данных.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">tmural_create_tables</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_tmural_update_db_check">
+        tmural_update_db_check()
+        <a href="namespaces/default.html#function_tmural_update_db_check" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/tmural/tmural.php"><a href="files/plugins-tmural-tmural.html"><abbr title="plugins/tmural/tmural.php">tmural.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Проверяет текущую версию базы данных и при необходимости устанавливает таблицы.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">tmural_update_db_check</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_tmural_register_entities">
         tmural_register_entities()
         <a href="namespaces/default.html#function_tmural_register_entities" class="headerlink"><i class="fas fa-link"></i></a>
@@ -122,7 +199,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/tmural/tmural.php"><a href="files/plugins-tmural-tmural.html"><abbr title="plugins/tmural/tmural.php">tmural.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 </aside>
 
         <p class="phpdocumentor-summary">Регистрирует типы постов и таксономии.</p>
@@ -134,6 +211,96 @@
         <section class="phpdocumentor-description"></section>
 
     
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_tmural_add_meta_boxes">
+        tmural_add_meta_boxes()
+        <a href="namespaces/default.html#function_tmural_add_meta_boxes" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/tmural/tmural.php"><a href="files/plugins-tmural-tmural.html"><abbr title="plugins/tmural/tmural.php">tmural.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Регистрирует метабоксы.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">tmural_add_meta_boxes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post_type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WP_Post">WP_Post</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$post_type</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Тип поста.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$post</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WP_Post">WP_Post</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Объект поста.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_tmural_save_product_post">
+        tmural_save_product_post()
+        <a href="namespaces/default.html#function_tmural_save_product_post" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/tmural/tmural.php"><a href="files/plugins-tmural-tmural.html"><abbr title="plugins/tmural/tmural.php">tmural.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Обрабатывает сохранение поста товара</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">tmural_save_product_post</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post_ID</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\WP_Post">WP_Post</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$post</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$post_ID</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Идентификатор поста.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$post</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\WP_Post">WP_Post</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Объект поста.</p>
+</section>
+
+            </dd>
+            </dl>
+
     
 
     

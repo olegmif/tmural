@@ -11,10 +11,25 @@ Search.appendIndex(
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020Product\u0020\u0028\u0422\u043E\u0432\u0430\u0440\u0029.",
             "url": "classes/Tmural-Models-Product.html"
         },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440\u0020\u043A\u043B\u0430\u0441\u0441\u0430.",
+            "url": "classes/Tmural-Models-Product.html#method___construct"
+        },                {
             "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aregister_post_type\u0028\u0029",
             "name": "register_post_type",
             "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0442\u0438\u043F\u0020\u043F\u043E\u0441\u0442\u0430\u0020tmural_product",
             "url": "classes/Tmural-Models-Product.html#method_register_post_type"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Acreate_table\u0028\u0029",
+            "name": "create_table",
+            "summary": "\u0421\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u0432\u0020\u0431\u0430\u0437\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0445\u0020\u0442\u0430\u0431\u043B\u0438\u0446\u0443\u0020tmural_products.",
+            "url": "classes/Tmural-Models-Product.html#method_create_table"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0020\u0434\u0430\u043D\u043D\u044B\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430\u0020\u0438\u0437\u0020\u0431\u0430\u0437\u044B\u0020\u0434\u0430\u043D\u043D\u044B\u0445,\n\u0435\u0441\u043B\u0438\u0020\u043E\u043D\u0438\u0020\u0442\u0430\u043C\u0020\u0435\u0441\u0442\u044C,\u0020\u0438\u043B\u0438\u0020\u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442\u0020\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F\u0020\u043F\u043E\u0020\u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E.",
+            "url": "classes/Tmural-Models-Product.html#method_load"
         },                {
             "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aset_name\u0028\u0029",
             "name": "set_name",
@@ -26,10 +41,45 @@ Search.appendIndex(
             "summary": "\u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u043D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430.",
             "url": "classes/Tmural-Models-Product.html#method_get_name"
         },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aset_price\u0028\u0029",
+            "name": "set_price",
+            "summary": "\u0423\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442\u0020\u0446\u0435\u043D\u0443",
+            "url": "classes/Tmural-Models-Product.html#method_set_price"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aget_price\u0028\u0029",
+            "name": "get_price",
+            "summary": "\u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0446\u0435\u043D\u0443\u0020\u0442\u043E\u0432\u0430\u0440\u0430.",
+            "url": "classes/Tmural-Models-Product.html#method_get_price"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Asave\u0028\u0029",
+            "name": "save",
+            "summary": "\u0421\u043E\u0445\u0440\u0430\u043D\u044F\u0435\u0442\u0020\u043F\u043E\u043B\u044F\u0020\u0442\u043E\u0432\u0430\u0440\u0430\u0020\u0432\u0020\u0431\u0430\u0437\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0445.",
+            "url": "classes/Tmural-Models-Product.html#method_save"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003A\u0024post_id",
+            "name": "post_id",
+            "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043F\u043E\u0441\u0442\u0430",
+            "url": "classes/Tmural-Models-Product.html#property_post_id"
+        },                {
             "fqsen": "\\Tmural\\Models\\Product\u003A\u003A\u0024name",
             "name": "name",
             "summary": "\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430",
             "url": "classes/Tmural-Models-Product.html#property_name"
+        },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003A\u0024product_data",
+            "name": "product_data",
+            "summary": "\u0414\u0430\u043D\u043D\u044B\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430",
+            "url": "classes/Tmural-Models-Product.html#property_product_data"
+        },                {
+            "fqsen": "\\tmural_create_tables\u0028\u0029",
+            "name": "tmural_create_tables",
+            "summary": "\u0421\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u0442\u0430\u0431\u043B\u0438\u0446\u044B\u0020\u0432\u0020\u0431\u0430\u0437\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0445.",
+            "url": "namespaces/default.html#function_tmural_create_tables"
+        },                {
+            "fqsen": "\\tmural_update_db_check\u0028\u0029",
+            "name": "tmural_update_db_check",
+            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u0442\u0020\u0442\u0435\u043A\u0443\u0449\u0443\u044E\u0020\u0432\u0435\u0440\u0441\u0438\u044E\u0020\u0431\u0430\u0437\u044B\u0020\u0434\u0430\u043D\u043D\u044B\u0445\u0020\u0438\u0020\u043F\u0440\u0438\u0020\u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u0438\u0020\u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442\u0020\u0442\u0430\u0431\u043B\u0438\u0446\u044B.",
+            "url": "namespaces/default.html#function_tmural_update_db_check"
         },                {
             "fqsen": "\\tmural_product_card_block_init\u0028\u0029",
             "name": "tmural_product_card_block_init",
@@ -41,24 +91,59 @@ Search.appendIndex(
             "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0442\u0438\u043F\u044B\u0020\u043F\u043E\u0441\u0442\u043E\u0432\u0020\u0438\u0020\u0442\u0430\u043A\u0441\u043E\u043D\u043E\u043C\u0438\u0438.",
             "url": "namespaces/default.html#function_tmural_register_entities"
         },                {
+            "fqsen": "\\tmural_add_meta_boxes\u0028\u0029",
+            "name": "tmural_add_meta_boxes",
+            "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u043C\u0435\u0442\u0430\u0431\u043E\u043A\u0441\u044B.",
+            "url": "namespaces/default.html#function_tmural_add_meta_boxes"
+        },                {
+            "fqsen": "\\tmural_save_product_post\u0028\u0029",
+            "name": "tmural_save_product_post",
+            "summary": "\u041E\u0431\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442\u0020\u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435\u0020\u043F\u043E\u0441\u0442\u0430\u0020\u0442\u043E\u0432\u0430\u0440\u0430",
+            "url": "namespaces/default.html#function_tmural_save_product_post"
+        },                {
             "fqsen": "\\tmural_some_func\u0028\u0029",
             "name": "tmural_some_func",
             "summary": "Undocumented\u0020function",
             "url": "namespaces/default.html#function_tmural_some_func"
+        },                {
+            "fqsen": "\\Tmural\\Metaboxes\\ProductPriceMetabox",
+            "name": "ProductPriceMetabox",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u043C\u0435\u0442\u0430\u0431\u043E\u043A\u0441\u0430,\u0020\u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D\u0020\u0434\u043B\u044F\u0020\u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u0020\u0432\u0020\u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0435\n\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\u0020\u043F\u043E\u0441\u0442\u0430.\u0020\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442\u0020\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044E\u0020\u0438\u0437\u043C\u0435\u043D\u0438\u0442\u044C\u0020\u0446\u0435\u043D\u0443\u0020\u0442\u043E\u0432\u0430\u0440\u0430.",
+            "url": "classes/Tmural-Metaboxes-ProductPriceMetabox.html"
+        },                {
+            "fqsen": "\\Tmural\\Metaboxes\\ProductPriceMetabox\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442\u0020\u043C\u0435\u0442\u0430\u0431\u043E\u043A\u0441.",
+            "url": "classes/Tmural-Metaboxes-ProductPriceMetabox.html#method_add"
+        },                {
+            "fqsen": "\\Tmural\\Metaboxes\\ProductPriceMetabox\u003A\u003Ahtml\u0028\u0029",
+            "name": "html",
+            "summary": "\u0412\u044B\u0432\u043E\u0434\u0438\u0442\u0020HTML\u0020\u043C\u0435\u0442\u0430\u0431\u043E\u043A\u0441\u0430",
+            "url": "classes/Tmural-Metaboxes-ProductPriceMetabox.html#method_html"
+        },                {
+            "fqsen": "\\Tmural\\Metaboxes\\ProductPriceMetabox\u003A\u003Asave\u0028\u0029",
+            "name": "save",
+            "summary": "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0445\u0020\u043C\u0435\u0442\u0430\u0431\u043E\u043A\u0441\u0430",
+            "url": "classes/Tmural-Metaboxes-ProductPriceMetabox.html#method_save"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
         },                {
-            "fqsen": "\\Tmural\\Models",
-            "name": "Models",
+            "fqsen": "\\Tmural\\Metaboxes",
+            "name": "Metaboxes",
             "summary": "",
-            "url": "namespaces/tmural-models.html"
+            "url": "namespaces/tmural-metaboxes.html"
         },                {
             "fqsen": "\\Tmural",
             "name": "Tmural",
             "summary": "",
             "url": "namespaces/tmural.html"
+        },                {
+            "fqsen": "\\Tmural\\Models",
+            "name": "Models",
+            "summary": "",
+            "url": "namespaces/tmural-models.html"
         }            ]
 );

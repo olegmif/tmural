@@ -1,6 +1,6 @@
 <?php
 /**
- * Содержит класс метабокса ProductPriceMetabox, предназначенного
+ * Содержит класс метабокса ProductPriceMetabox, предназначенный
  * для отображения в интерфейсе редактирования постов типа Product.
  *
  * @package tmural\plugin
