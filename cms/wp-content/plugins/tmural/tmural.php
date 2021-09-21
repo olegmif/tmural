@@ -73,15 +73,36 @@ add_action( 'init', 'tmural_product_card_block_init' );
  * @return void
  */
 function tmural_register_entities() {
-	$product = new Product();
-	$product->register_post_type();
+	Product::register_post_type();
 }
 
 add_action( 'init', 'tmural_register_entities' );
 
+use \Tmural\Metaboxes\ProductPriceMetabox;
 
+/**
+ * Регистрирует метабоксы.
+ *
+ * @return void
+ */
+function tmural_add_meta_boxes(): void {
+	ProductPriceMetabox::add();
+}
 
+/**
+ * Обрабатывает сохранение поста товара
+ *
+ * @param int      $post_ID Идентификатор поста.
+ * @param \WP_Post $post Объект поста.
+ * @return void
+ */
+function tmural_save_product_post( $post_ID, $post ) {
+	$product = new Product( $post_ID );
+	ProductPriceMetabox::save( $product );
+	$product->save( $update );
+}
 
-
+add_action( 'add_meta_boxes', 'tmural_add_meta_boxes' );
+add_action( 'save_post_tmural_product', 'tmural_save_product_post', 10, 2 );
 
 
