@@ -51,6 +51,7 @@ final class ProductTest extends TestCase {
 		$product = new Product();
 
 		$register_post_type = $this->getFunctionMock( 'Tmural\Models', 'register_post_type' );
+
 		$register_post_type->expects( $this->once() )->willReturnCallback(
 			function ( $post_type, $args ) {
 				$this->assertEquals( 'tmural_product', $post_type );
@@ -59,4 +60,5 @@ final class ProductTest extends TestCase {
 		);
 		$product->register_post_type();
 	}
+
 }

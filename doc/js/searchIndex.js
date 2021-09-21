@@ -11,6 +11,11 @@ Search.appendIndex(
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020Product\u0020\u0028\u0422\u043E\u0432\u0430\u0440\u0029.",
             "url": "classes/Tmural-Models-Product.html"
         },                {
+            "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aregister_post_type\u0028\u0029",
+            "name": "register_post_type",
+            "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0442\u0438\u043F\u0020\u043F\u043E\u0441\u0442\u0430\u0020tmural_product",
+            "url": "classes/Tmural-Models-Product.html#method_register_post_type"
+        },                {
             "fqsen": "\\Tmural\\Models\\Product\u003A\u003Aset_name\u0028\u0029",
             "name": "set_name",
             "summary": "\u0423\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442\u0020\u043D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430.",
@@ -31,10 +36,10 @@ Search.appendIndex(
             "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0431\u043B\u043E\u043A\u0430\u0020\u0440\u0435\u0434\u0430\u043A\u0442\u043E\u0440\u0430\u0020\u0022\u041A\u0430\u0440\u0442\u043E\u0447\u043A\u0430\u0020\u0442\u043E\u0432\u0430\u0440\u0430\u0022.",
             "url": "namespaces/default.html#function_tmural_product_card_block_init"
         },                {
-            "fqsen": "\\tmural_test\u0028\u0029",
-            "name": "tmural_test",
-            "summary": "Undocumented\u0020function",
-            "url": "namespaces/default.html#function_tmural_test"
+            "fqsen": "\\tmural_register_entities\u0028\u0029",
+            "name": "tmural_register_entities",
+            "summary": "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0435\u0442\u0020\u0442\u0438\u043F\u044B\u0020\u043F\u043E\u0441\u0442\u043E\u0432\u0020\u0438\u0020\u0442\u0430\u043A\u0441\u043E\u043D\u043E\u043C\u0438\u0438.",
+            "url": "namespaces/default.html#function_tmural_register_entities"
         },                {
             "fqsen": "\\tmural_some_func\u0028\u0029",
             "name": "tmural_some_func",
