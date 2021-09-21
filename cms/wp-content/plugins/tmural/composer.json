@@ -12,7 +12,8 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "Tmural\\Models\\": "Models/"
+      "Tmural\\Models\\": "Models/",
+      "Tmural\\Metaboxes\\": "Metaboxes/"
     }
   }
 }
