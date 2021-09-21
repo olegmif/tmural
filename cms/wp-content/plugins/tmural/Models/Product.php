@@ -23,16 +23,6 @@ class Product {
 	private int $post_id;
 
 	/**
-	 * Признак изменения данных.
-	 * true, если данные изменялись или false, если данные не изменялись.
-	 * Если содержит false, то вызов save() с любым значением параметра
-	 * не приведет к сохранению данных в базе.
-	 *
-	 * @var bool
-	 */
-	private bool $is_changed;
-
-	/**
 	 * Наименование товара
 	 *
 	 * @var string
@@ -52,7 +42,6 @@ class Product {
 	 * @param integer $post_id Идентификатор поста.
 	 */
 	public function __construct( int $post_id ) {
-		$this->is_changed = false;
 		$this->post_id     = $post_id;
 	}
 
@@ -101,8 +90,6 @@ class Product {
 	 */
 	public function set_name( string $name ) {
 		$this->name = $name;
-
-		$this->is_changed = true;
 	}
 
 	/**
@@ -122,8 +109,7 @@ class Product {
 	 */
 	public function set_price( float $price ) {
 		if ( is_float( $price ) ) {
-			$this->price      = $price;
-			$this->is_changed = true;
+			$this->price = $price;
 			return true;
 		} else {
 			return new WP_Error( 'invalid_value', "$price is not a valid price" );
@@ -136,11 +122,6 @@ class Product {
 	 * @return void
 	 */
 	public function save(): void {
-
-		if ( ! $this->is_changed ) {
-			return;
-		}
-
 		global $wpdb;
 
 		$table_name = $wpdb->prefix . 'tmural_products';
